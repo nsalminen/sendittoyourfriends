@@ -1,18 +1,5 @@
-# Three.js boilerplate
-This is a simple three.js boilerplate for new projects, feel free to contribute!
+# Send It To Your Friends
 
-### Setup
-Run the setup script to make the repository your own!
+This bottle cap is designed for washing eyes exposed to tear gas / CS gas. You can 3D print this bottle cap and put it as a lid on plastic water bottles. You can email this 3D model to your friends.
 
-```bash
-$ ./setup
-```
-
-Install dependencies and start your engines! This ships with a simple express.js server so we can run three.js properly without cross-origin issues.
-
-```bash
-$ npm install
-$ npm run start
-```
-
-Open http://localhost:8080 to view your project.
+Find it at `public/assets/bottlecapeyewasher.obj`.
