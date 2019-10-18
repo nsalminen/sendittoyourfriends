@@ -8,7 +8,7 @@ app.set('port', (process.env.PORT || 8080));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({extended: true}));
 
 app.post('/formProcess', function (req, res) {
     var data = req.body;
@@ -18,12 +18,12 @@ app.post('/formProcess', function (req, res) {
         to: req.body.to, // receiver
         subject: "Bottle cap for washing your eyes", // subject
         html: "This bottle cap is designed for washing eyes exposed to tear gas/CS gas. You can 3D print this bottle cap and put it as a lid on plastic water bottles.<br>(Sent from sendittoyourfriends.com)", // body
-	attachments: [
-		{
-			path: 'public/assets/bottlecapeyewasher.obj'
-		}
-	]
-    }, function (error, response) {  //callback
+        attachments: [
+            {
+                path: 'public/assets/bottlecapeyewasher.obj'
+            }
+        ]
+    }, function (error, response) {
         if (error) {
             console.log(error);
         } else {
@@ -31,13 +31,14 @@ app.post('/formProcess', function (req, res) {
         }
 
         smtpTransport.close();
-	res.redirect("/");
+        res.redirect("/");
     });
 });
 
-app.listen(app.get('port'), function(err) {
-  if (err) {
-    console.log(err);
-  } else {
-    console.log('Running on port: ' + app.get('port')); }
+app.listen(app.get('port'), function (err) {
+    if (err) {
+        console.log(err);
+    } else {
+        console.log('Running on port: ' + app.get('port'));
+    }
 });

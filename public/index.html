@@ -1,95 +1,87 @@
 <html>
-	<head>
-		<title>Send It To Your Friends</title>
-		<style>
+<head>
+    <title>Send It To Your Friends</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #e5e5e5;
+            font: Times New Roman;
+            font-size: 1.5em;
+            letter-spacing: 0.02em;
+        }
 
-			body { 
-				margin: 0; 
-				background-color: #e5e5e5;
-				font: Times New Roman;
-				font-size: 1.5em;
-				letter-spacing: 0.02em;
-			}
+        .wrapper {
+            position: relative;
+            display: block;
+            margin: 1.2em;
+        }
 
+        #navigation {
+            text-decoration: underline;
+            color: blue;
+        }
 
-			.wrapper {
-				position: relative;
-				display: block;
-				margin: 1.2em;
-			}
-		
-			#navigation {
-				text-decoration: underline;
-				color: blue;
-			}
+        #send {
+            margin-top: 2em;
+        }
 
-			#send {
-				margin-top:2em;
-			}
+        #test {
+            /*position: relative;*/
+            /*display: inline;*/
+        }
 
-			#test {
+        canvas {
+            /*position : fixed; */
+            /*background-color:black;*/
 
-					/*position: relative;*/
-					/*display: inline;*/
-				}
+            position: absolute;
+            top: 0;
+            bottom: 300;
+            left: 0;
+            right: 0;
+            margin: auto;
+            /*top: 50%;
 
-			canvas { 
-				/*position : fixed; */
-				/*background-color:black;*/
-				
-				position: absolute;
-			    top:0;
-			    bottom: 300;
-			    left: 0;
-			    right: 0;
-			    margin:auto;
-    			/*top: 50%;
-    			
-   				margin-right: -50%;
-    			transform: translate(-48%, -75%);*/
-    		}
+            margin-right: -50%;
+            transform: translate(-48%, -75%);*/
+        }
 
-				#select {
-					position: relative;
-					
-					top: 70vh;
-					text-decoration: underline;
-					color: blue;
-					text-align: center;
-				
-				}
+        #select {
+            position: relative;
 
-			input {
-				font-size: 0.8em;
-				color: grey;
-			}
+            top: 70vh;
+            text-decoration: underline;
+            color: blue;
+            text-align: center;
 
-		</style>
-	</head>
-	<body>
-		<div class="wrapper">
-				<a href="about.html" id="navigation">About</a>		
-		</div>
-					
-		<div id="test">
-			<div id="select">
-				<div id="send">Send it to your friends</div>
-				<form action="/formProcess" method="post">
-				<input type="email" name="to" placeholder="example@email.com" ><input type="submit">
-			</form>
-			</div>
-		</div>
+        }
 
+        input {
+            font-size: 0.8em;
+            color: grey;
+        }
 
-					
-			
-		
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <a href="about.html" id="navigation">About</a>
+</div>
 
-	</body>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/87/three.min.js"></script>
-		<script src="assets/OrbitControls.js"></script>
-		<script src="assets/OBJLoader.js"></script>
-		<script src="assets/MTLLoader.js"></script>
-		<script src="scripts.js"></script>
+<div id="test">
+    <div id="select">
+        <div id="send">Send it to your friends</div>
+        <form action="/formProcess" method="post">
+            <input type="email" name="to" placeholder="example@email.com"><input type="submit">
+        </form>
+    </div>
+</div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/87/three.min.js"></script>
+<script src="assets/OrbitControls.js"></script>
+<script src="assets/OBJLoader.js"></script>
+<script src="assets/MTLLoader.js"></script>
+<script src="scripts.js"></script>
 
 </html>
