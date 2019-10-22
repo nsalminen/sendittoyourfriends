@@ -6,7 +6,7 @@
             margin: 0;
             background-color: #e5e5e5;
             font: Times New Roman;
-            font-size: 1.5em;
+            font-size: 1.2vw;
             letter-spacing: 0.02em;
         }
 
@@ -41,7 +41,6 @@
             right: 0;
             margin: auto;
             /*top: 50%;
-
             margin-right: -50%;
             transform: translate(-48%, -75%);*/
         }
@@ -57,9 +56,19 @@
         }
 
         input {
-            font-size: 0.8em;
+            margin-top: 0.6em;
+            font-size: 0.8vw;
             color: grey;
         }
+
+        @media only screen and (max-device-width: 480px) {
+              body {
+                font-size: 1.5em;
+              }
+              input {
+                font-size: 0.65em;
+              }
+          }
 
     </style>
 </head>

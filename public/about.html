@@ -7,16 +7,14 @@
             background-color: #e5e5e5;
             font: Times New Roman;
             letter-spacing: 0.02em;
-            font-size: 1.5em;
+            font-size: 1.2vw;
         }
 
-        img {
-            width: 65%;
-        }
+       
 
         .wrapper {
             position: relative;
-            display: block;
+            display: inline-block;
             margin: 1.2em;
         }
 
@@ -32,12 +30,62 @@
             width: 30em;
 
         }
+        .img-wrapper {
+            display: block;   
+            width: 35vw;
+        }
+
+        img{
+            width: 33%;
+            padding-right: 1em;
+        }
+        .use {
+            width: 70%;
+        }
+        .bottle{
+            width: 30%;
+        }
 
         .colophon {
             position: fixed;
             font-size: 0.7em;
-            bottom: 2em;
+            bottom: 1.2em;
+           
         }
+
+
+        @media only screen and (max-device-width: 480px) {
+              body {
+                font-size: 1.5em;
+              }
+
+              .wrapper {
+                display: inline-block;
+              }
+
+              .description {
+                width: 100%;
+              }
+
+              .img-wrapper {
+                width: 100%;
+              }
+              .bottle, .use {
+                width: 100%;
+              }
+
+
+            }
+
+@media only screen and (max-width: 2000px) {
+          .colophon {
+            position: relative;
+            font-size: 0.7em;
+            top: 8vw;
+            padding-bottom: 1.2em;
+        }
+      }
+
     </style>
 </head>
 <body>
@@ -47,13 +95,14 @@
     </a>
     <div class="description">
         This bottle cap is designed for washing eyes exposed to tear gas / CS gas. You can 3D print this bottle cap and
-        put it as a lid on plastic water bottles. You can email this 3D model to your friends.<br><br><br>
-        <img src="assets/description.jpg">
+        put it as a lid on plastic water bottles. You can email this 3D model to your friends.<br><br>
     </div>
+    <div class="img-wrapper"><img class="use"src="assets/description.jpg"><br><br><img class="bottle" src="assets/bottle.jpg"></div>
     <span class="colophon">
         Project by <i>Donghwan Kam</i><br>
         3D Model by <i>Marco Federico Cagnoni</i><br>
-        Website by <i>Seokyung Kim</i>
+        Photograph by <i>Thomas Ballouhey</i><br>
+        Website by <i>Seokyung Kim and Nels Salminen</i>
     </span>
 </div>
 </body>
