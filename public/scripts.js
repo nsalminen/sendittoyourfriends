@@ -10,7 +10,7 @@ camera.zoom = 100;
 var renderer = new THREE.WebGLRenderer({ alpha: true });
 renderer.setSize( window.innerWidth/1.5, window.innerHeight/1.5 );
 
-document.getElementById('test').appendChild( renderer.domElement );
+document.getElementById('container').appendChild( renderer.domElement );
 
 
 

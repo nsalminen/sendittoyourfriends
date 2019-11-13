@@ -20,7 +20,7 @@ app.post('/formProcess', function (req, res) {
         html: "This bottle cap is designed for washing eyes exposed to tear gas/CS gas. You can 3D print this bottle cap and put it as a lid on plastic water bottles.<br>(Sent from sendittoyourfriends.com)", // body
         attachments: [
             {
-                path: 'public/assets/bottlecapeyewasher.obj'
+                path: 'public/assets/bottlecapeyewasher.stl'
             }
         ]
     }, function (error, response) {
