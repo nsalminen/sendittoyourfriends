@@ -5,7 +5,7 @@
         body {
             margin: 0;
             background-color: #e5e5e5;
-            font: Times New Roman;
+            font-family: Times New Roman, serif;
             font-size: 1.2vw;
             letter-spacing: 0.02em;
         }
@@ -25,29 +25,17 @@
             margin-top: 2em;
         }
 
-        #test {
-            /*position: relative;*/
-            /*display: inline;*/
-        }
-
         canvas {
-            /*position : fixed; */
-            /*background-color:black;*/
-
             position: absolute;
             top: 0;
             bottom: 300;
             left: 0;
             right: 0;
             margin: auto;
-            /*top: 50%;
-            margin-right: -50%;
-            transform: translate(-48%, -75%);*/
         }
 
         #select {
             position: relative;
-
             top: 70vh;
             text-decoration: underline;
             color: blue;
@@ -62,13 +50,14 @@
         }
 
         @media only screen and (max-device-width: 480px) {
-              body {
+            body {
                 font-size: 1.5em;
-              }
-              input {
+            }
+
+            input {
                 font-size: 0.65em;
-              }
-          }
+            }
+        }
 
     </style>
 </head>
@@ -77,12 +66,14 @@
     <a href="about.html" id="navigation">About</a>
 </div>
 
-<div id="test">
+<div class="container">
     <div id="select">
         <div id="send">Send it to your friends</div>
         <form action="/formProcess" method="post">
             <input type="email" name="to" placeholder="example@email.com"><input type="submit">
         </form>
+        <a href="assets/bottlecapeyewasher.stl" download>Download</a><br><br>
+        <a href="privacy-policy.html">Privacy Policy</a>
     </div>
 </div>
 
@@ -92,5 +83,4 @@
 <script src="assets/OBJLoader.js"></script>
 <script src="assets/MTLLoader.js"></script>
 <script src="scripts.js"></script>
-
 </html>
