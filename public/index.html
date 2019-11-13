@@ -21,6 +21,8 @@
             color: blue;
         }
 
+
+
         #send {
             margin-top: 2em;
         }
@@ -36,7 +38,7 @@
 
             position: absolute;
             top: 0;
-            bottom: 300;
+            bottom: 400;
             left: 0;
             right: 0;
             margin: auto;
@@ -48,7 +50,7 @@
         #select {
             position: relative;
 
-            top: 70vh;
+            top: 65vh;
             text-decoration: underline;
             color: blue;
             text-align: center;
@@ -79,11 +81,13 @@
 
 <div id="test">
     <div id="select">
-        <div id="send">Send it to your friends</div>
+        <span id="send">Send it to your friends</span> 
         <form action="/formProcess" method="post">
             <input type="email" name="to" placeholder="example@email.com"><input type="submit">
-        </form>
+        </form><br><a href="assets/eye-washer-v1.stl" download>Download yourself</a>
+
     </div>
+
 </div>
 
 </body>
