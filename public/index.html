@@ -21,6 +21,8 @@
             color: blue;
         }
 
+
+
         #send {
             margin-top: 2em;
         }
@@ -28,7 +30,7 @@
         canvas {
             position: absolute;
             top: 0;
-            bottom: 300;
+            bottom: 400;
             left: 0;
             right: 0;
             margin: auto;
@@ -36,11 +38,10 @@
 
         #select {
             position: relative;
-            top: 70vh;
+            top: 65vh;
             text-decoration: underline;
             color: blue;
             text-align: center;
-
         }
 
         input {
@@ -68,13 +69,19 @@
 
 <div class="container">
     <div id="select">
-        <div id="send">Send it to your friends</div>
+        <span id="send">Send it to your friends</span> 
         <form action="/formProcess" method="post">
             <input type="email" name="to" placeholder="example@email.com"><input type="submit">
+<<<<<<< HEAD
         </form>
         <a href="assets/bottlecapeyewasher.stl" download>Download</a><br><br>
         <a href="privacy-policy.html">Privacy Policy</a>
+=======
+        </form><br><a href="assets/eye-washer-v1.stl" download>Download yourself</a>
+
+>>>>>>> 25441e508570e2c0125e24267085c249ada9e7bd
     </div>
+
 </div>
 
 </body>
