@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    background-color: #e5e5e5;
+    font-family: Times New Roman, serif;
+    letter-spacing: 0.02em;
+    font-size: 1.2vw;
+}
+
+.wrapper {
+    position: relative;
+    display: inline-block;
+    margin: 1.2em;
+}
+
+#navigation {
+    text-decoration: underline;
+    color: blue;
+}
+
+.description {
+    margin-top: 2em;
+    width: 30em;
+}
+
+.img-wrapper {
+    display: block;
+    width: 35vw;
+}
+
+img {
+    width: 33%;
+    padding-right: 1em;
+}
+
+.use {
+    width: 70%;
+}
+
+.bottle {
+    width: 30%;
+}
+
+.colophon {
+    position: fixed;
+    font-size: 0.7em;
+    bottom: 1.2em;
+}
+
+#send {
+    margin-top: 2em;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    bottom: 400;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#select {
+    position: relative;
+    top: 65vh;
+    text-decoration: underline;
+    color: blue;
+    text-align: center;
+}
+
+input {
+    margin-top: 0.6em;
+    font-size: 0.8vw;
+    color: grey;
+}
+
+@media only screen and (max-device-width: 480px) {
+    body {
+        font-size: 1.5em;
+    }
+
+    .wrapper {
+        display: inline-block;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .img-wrapper {
+        width: 100%;
+    }
+
+    .bottle, .use {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 2000px) {
+    .colophon {
+        position: relative;
+        font-size: 0.7em;
+        top: 8vw;
+        padding-bottom: 1.2em;
+    }
+}
