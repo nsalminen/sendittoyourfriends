@@ -1,24 +1,27 @@
-<html lang="">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>Send It To Your Friends</title>
     <link href="styles.css" rel="stylesheet">
 </head>
-<body>
+<body class="site">
 <div class="wrapper">
     <a href="about.html" id="navigation">About</a>
 </div>
 
-<div id="container">
+<main class="content" id="obj-container">
+
+</main>
+<footer>
     <div id="select">
-        <span id="send">Send it to your friends</span> 
+        <span id="send">Send it to your friends</span>
         <form action="/formProcess" method="post">
-            <input type="email" name="to" placeholder="example@email.com"><input type="submit">
+            <input type="email" name="to" placeholder="example@email.com"><input value="Send" type="submit">
         </form>
         <a href="assets/bottlecapeyewasher.stl" download>Download yourself</a><br><br>
         <a href="privacy-policy.html">Privacy Policy</a>
     </div>
-</div>
+</footer>
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/87/three.min.js"></script>
