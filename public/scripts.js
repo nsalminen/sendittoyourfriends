@@ -12,6 +12,7 @@ container.appendChild(renderer.domElement);
 window.addEventListener( 'resize', onWindowResize, false );
 
 function onWindowResize(){
+    document.body.height = window.innerHeight;
     camera.aspect = container.clientWidth / container.clientHeight;
     camera.updateProjectionMatrix();
     renderer.setSize( container.clientWidth, container.clientHeight );
