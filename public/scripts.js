@@ -41,10 +41,9 @@ scene.add(backLight);
 
 var objLoader = new THREE.OBJLoader();
 objLoader.setPath('assets/');
-objLoader.load('only_display_do_not_print.obj', function (object) {
+objLoader.load('bottlecapeyewasher.obj', function (object) {
     scene.add(object);
     object.position.y -= 35;
-    object.rotation.x = -Math.PI/2;
 });
 
 var animate = function () {
